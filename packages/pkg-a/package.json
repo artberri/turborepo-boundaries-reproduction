@@ -1,5 +1,8 @@
 {
   "name": "pkg-a",
+  "exports": {
+    "./test": "./src/index.ts"
+  },
   "scripts": {
     "build": "echo \"Building at the speed of Turbo.\" > output-file.txt && cat output-file.txt",
     "lint": "echo \"Linted!\"",
