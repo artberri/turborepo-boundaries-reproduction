@@ -1,7 +1,11 @@
 {
   "name": "pkg-a",
   "exports": {
-    "./test": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./fixtures/*": "./test/fixtures/*.ts",
+    "./fakes/*": "./test/fakes/*.ts",
+    "./*": "./src/*.ts",
+    "./**/*": "./src/**/*.ts"
   },
   "scripts": {
     "build": "echo \"Building at the speed of Turbo.\" > output-file.txt && cat output-file.txt",

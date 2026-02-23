@@ -5,5 +5,8 @@
   "packageManager": "pnpm@8.15.6",
   "devDependencies": {
     "turbo": "canary"
+  },
+  "scripts": {
+    "boundaries": "turbo boundaries"
   }
 }
